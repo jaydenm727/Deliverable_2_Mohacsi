@@ -11,10 +11,11 @@ namespace Deliverable_2_Mohacsi
         static void Main(string[] args)
         {
             Console.WriteLine("What grade do you expect to get in ISM4300?");
-            string grade = Console.ReadLine();
+            
 
             try
             {
+                string grade = Console.ReadLine();
                 decimal n1 = decimal.Parse(grade);
                 n1 = Math.Round(n1);
 
@@ -42,7 +43,7 @@ namespace Deliverable_2_Mohacsi
             }
             catch
             {
-                Console.WriteLine("Your letter grade is " + grade);
+                Console.WriteLine("Please enter in a number grade.");
             }
         }
     }
